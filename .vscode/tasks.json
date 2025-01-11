@@ -1,0 +1,21 @@
+{
+    "label": "build",
+    "type": "shell",
+    "command": "g++",
+    "args": [
+        "-g",
+        "Mine/src/Tetris.cpp",
+        "${workspaceFolder}/src/GameGUI.cpp",
+        "-o",
+        "${workspaceFolder}/Tetris",
+        "-lsfml-graphics",
+        "-lsfml-window",
+        "-lsfml-system"
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    },
+    "problemMatcher": ["$gcc"],
+    "detail": "Build Tetris with SFML"
+}
